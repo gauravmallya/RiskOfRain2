@@ -1,5 +1,5 @@
 body{
-    background-image: url(/ror2/images/wallpaper.jpeg);
+    background-image: url(./images/wallpaper.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -151,62 +151,62 @@ a {
     position: absolute;
     top: 0%;
     left: 0%;
-    background: url(/ror2/images/AcridBackground.png) 50% 50% no-repeat;
+    background: url(./images/AcridBackground.png) 50% 50% no-repeat;
     background-size: cover;
 }
 
 .characters_item:nth-child(2)::before {
-    background: url(/ror2/images/ArtificerBackground.png) 50% 50% no-repeat;
+    background: url(./images/ArtificerBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(3)::before {
-    background: url(/ror2/images/BanditBackground.png) 50% 50% no-repeat;
+    background: url(./images/BanditBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(4)::before {
-    background: url(/ror2/images/CaptainBackground.png) 50% 50% no-repeat;
+    background: url(./images/CaptainBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(5)::before {
-    background: url(/ror2/images/CommandoBackground.png) 50% 50% no-repeat;
+    background: url(./images/CommandoBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(6)::before {
-    background: url(/ror2/images/EngineerBackground.png) 50% 50% no-repeat;
+    background: url(./images/EngineerBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(7)::before {
-    background: url(/ror2/images/HereticBackground.png) 50% 50% no-repeat;
+    background: url(./images/HereticBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(8)::before {
-    background: url(/ror2/images/HuntressBackground.png) 50% 50% no-repeat;
+    background: url(./images/HuntressBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(9)::before {
-    background: url(/ror2/images/LoaderBackground.png) 50% 50% no-repeat;
+    background: url(./images/LoaderBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(10)::before {
-    background: url(/ror2/images/MercenaryBackground.png) 50% 50% no-repeat;
+    background: url(./images/MercenaryBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(11)::before {
-    background: url(/ror2/images/MUL-TBackground.png) 50% 50% no-repeat;
+    background: url(./images/MUL-TBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
 .characters_item:nth-child(12)::before {
-    background: url(/ror2/images/RexBackground.png) 50% 50% no-repeat;
+    background: url(./images/RexBackground.png) 50% 50% no-repeat;
     background-size: cover
 }
 
@@ -244,7 +244,7 @@ a {
     width: 0px;
     padding-top: 24.16452%;
     margin-top: -25.16452%;
-    background: url(/ror2/images/ptn_diagonal_12.png) 0 0;
+    background: url(./images/ptn_diagonal_12.png) 0 0;
     background-size: 8px;
     -webkit-transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -337,4 +337,7 @@ list{
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: teal;
     padding-left: 5%;
+}
+char{
+    color: white
 }

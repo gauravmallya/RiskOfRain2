@@ -5,6 +5,9 @@ class Character{
         regen,
         damage,
         armor,
+        healthipl,
+        regenipl,
+        damageipl,
         upgradeAddHealth
     )
     {
@@ -13,6 +16,9 @@ class Character{
     this.regen = regen;
     this.damage = damage;
     this.armor = armor;
+    this.healthip = healthipl;
+    this.regenipl = regenipl;
+    this.damageipl = damageipl;
     }    
     upgradeAddHealth(incr){
         this.health = this.health + incr
