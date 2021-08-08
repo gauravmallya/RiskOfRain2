@@ -72,8 +72,8 @@ const Engineer = new Character(
     2.8
 )
 
-const Heritic = new Character(
-    "Heritic",
+const Heretic = new Character(
+    "Heretic",
     440,
     -6,
     14,
@@ -139,7 +139,7 @@ const Rex = new Character(
 
 
 
-const characters = [Acrid, Artificer, Bandit, Captain, Commando, Engineer, Heritic, Huntress, Loader, Mercenary, Mult, Rex]
+const characters = [Acrid, Artificer, Bandit, Captain, Commando, Engineer, Heretic, Huntress, Loader, Mercenary, Mult, Rex]
 
 const markup = (character) => {
     return `
