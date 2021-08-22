@@ -140,6 +140,7 @@ const Rex = new Character(
 
 
 const characters = [Acrid, Artificer, Bandit, Captain, Commando, Engineer, Heretic, Huntress, Loader, Mercenary, Mult, Rex]
+const items = ["Armor-Piercing_Rounds.png", "Backup_Magazine.png", "Bison_Steak.png", "Bundle_of_Fireworks.png", "Bustling_Fungus.png", "Cautious_Slug.png", "Crowbar.png", "Energy_Drink.png", "Focus_Crystal.png", "Gasoline.png", "Medkit.png", "Repulsion_Armor_Plate.png", "Rusted_Key.png"]
 
 const markup = (character) => {
     return `
@@ -169,9 +170,39 @@ function findIndex(name){
 }
 
 var index = findIndex(name);
+const thisChar = characters[index]
 console.log(name + " :", characters[index])
 
-const c1 = document.createElement("char");
-c1.innerHTML = markup(characters[index]);
-document.body.appendChild(c1);
+    const c1 = document.createElement("char");
+    c1.innerHTML = markup(characters[index]);
+    document.body.appendChild(c1);
 
+const getImage = (name, doc) => {
+    return `
+    <div class = "col" id = "${name}">
+        <img src = "/items/${doc}">
+    </div>
+`;
+};
+function createTable(items){
+    var x = `<div class = "container">
+                <div class = "row row-cols-4">`;
+    for (let j  = 0; j < items.length; j++){
+        const n = items[j].split(".")[0];
+        x += getImage(n, items[j]);
+        
+        
+    }
+    x += `</div>
+            </div>`;
+    return x
+}
+
+const tbl = document.createElement("tbl");
+tbl.innerHTML = createTable(items);
+document.body.appendChild(tbl);
+
+document.getElementById('Armor-Piercing_Rounds').addEventListener("click", function(){
+    thisChar.damage *= 1.15;
+    c1.innerHTML = markup(thisChar);
+})
